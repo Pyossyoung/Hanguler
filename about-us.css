@@ -113,16 +113,46 @@ hr {
 }
 
 .card {
+  position: relative;
   width: 30%;
   height: 500px;
   margin: 10px;
   border: thin solid #b3b3b3;
   border-radius: 25px;
-  overflow: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   scrollbar-color: gray white;
-  box-shadow: inset 0px 40px 20px -10px white, inset 0px -40px 20px -10px white;
+}
+.card:before {
+  content: "";
+  display: block;
+  box-shadow: inset 0px 40px 20px -10px white;
+  border-radius: 25px;
+  width: 100;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.card:after {
+  content: "";
+  display: block;
+  box-shadow: inset 0px -40px 20px -10px white;
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  z-index: 999;
+}
+
+.card_content {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 95%;
+  z-index: 99;
 }
 
 .card::-webkit-scrollbar-thumb {
@@ -198,7 +228,7 @@ hr {
 .review p {
   flex: 1;
   border: solid thin gray;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 10% 5%;
   margin-left: 0px;
   font-size: 13px;

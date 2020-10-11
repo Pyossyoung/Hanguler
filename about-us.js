@@ -40,12 +40,17 @@ class Tutorcards {
     var krnames = document.querySelectorAll(".korean-name");
     var engnames = document.querySelectorAll(".english-name");
     var introductions = document.querySelectorAll(".tutor-introduce");
-    //var reviews = document.querySelectorAll(".review p");
-    console.log(krnames.length);
+    var reviews = document.querySelectorAll(".review p");
+    console.log(reviews);
     for (let i = this.startidx; i < this.startidx + 3; i++) {
       krnames[i - this.startidx].innerHTML = this.cards[i].krname;
       engnames[i - this.startidx].innerHTML = this.cards[i].engname;
       introductions[i - this.startidx].innerHTML = this.cards[i].introduction;
+      reviews[(i - this.startidx) * 5].innerHTML = this.cards[i].reviews[0];
+      reviews[(i - this.startidx) * 5 + 1].innerHTML = this.cards[i].reviews[1];
+      reviews[(i - this.startidx) * 5 + 2].innerHTML = this.cards[i].reviews[2];
+      reviews[(i - this.startidx) * 5 + 3].innerHTML = this.cards[i].reviews[3];
+      reviews[(i - this.startidx) * 5 + 4].innerHTML = this.cards[i].reviews[4];
     }
   }
 }
@@ -100,13 +105,44 @@ cardList = [
   ),
 ];
 
-cards = new Tutorcards(cardList);
-cards.displayCards();
+tutor_cards = new Tutorcards(cardList);
+
+// add reviews here
+tutor_cards.cards[0].addReview("이름1-review1");
+tutor_cards.cards[0].addReview("이름1-review2");
+tutor_cards.cards[0].addReview("이름1-review3");
+tutor_cards.cards[0].addReview("이름1-review4");
+tutor_cards.cards[0].addReview("이름1-review5");
+
+tutor_cards.cards[1].addReview("이름2-review1");
+tutor_cards.cards[1].addReview("이름2-review2");
+tutor_cards.cards[1].addReview("이름2-review3");
+tutor_cards.cards[1].addReview("이름2-review4");
+tutor_cards.cards[1].addReview("이름2-review5");
+
+tutor_cards.cards[2].addReview("이름3-review1");
+tutor_cards.cards[2].addReview("이름3-review2");
+tutor_cards.cards[2].addReview("이름3-review3");
+tutor_cards.cards[2].addReview("이름3-review4");
+tutor_cards.cards[2].addReview("이름3-review5");
+
+tutor_cards.cards[3].addReview("이름4-review1");
+tutor_cards.cards[3].addReview("이름4-review2");
+tutor_cards.cards[3].addReview("이름4-review3");
+tutor_cards.cards[3].addReview("이름4-review4");
+tutor_cards.cards[3].addReview("이름4-review5");
+
+tutor_cards.cards[4].addReview("이름5-review1");
+tutor_cards.cards[4].addReview("이름5-review2");
+tutor_cards.cards[4].addReview("이름5-review3");
+tutor_cards.cards[4].addReview("이름5-review4");
+tutor_cards.cards[4].addReview("이름5-review5");
+
+tutor_cards.displayCards();
 
 var prev = document.getElementById("prev-arrow");
 var next = document.getElementById("next-arrow");
-console.log(prev);
-prev.onclick = () => cards.shiftLeft();
-next.onclick = () => cards.shiftRight();
+prev.onclick = () => tutor_cards.shiftLeft();
+next.onclick = () => tutor_cards.shiftRight();
 
 //TODO : reviews change.... queryselectorAll doesn't work as I intended OTL....
