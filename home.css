@@ -1,0 +1,32 @@
+.wp-block-button .wp-block-button__link {
+  background-color: #ffdb24;
+  color: #17408d;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+#header {
+  margin: 30px 0px;
+  padding: 50px;
+  background-color: #e3f2fd;
+}
+
+#header p {
+  color: #153286;
+  margin: 30px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#buttons-header {
+  display: flex;
+}
+
+#buttons-header .button {
+  flex: 1;
+  padding: 30px;
+}
+
+.container {
+  padding: 5%;
+}
