@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="faq.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p style="width: 90%; margin: 30px auto">
+      We gathered some of the most frequently asked questions about Hanguler.<br />
+      Click each tab to check!
+    </p>
+    <div class="tab">
+      <button class="tablinks active" onclick="openQ(event, 'LT')">
+        Level Test
+      </button>
+      <button class="tablinks" onclick="openQ(event, 'service')">
+        Service Use
+      </button>
+      <button class="tablinks" onclick="openQ(event, 'registration')">
+        Class Registration
+      </button>
+      <button class="tablinks" onclick="openQ(event, 'payment')">
+        Payment/Refund
+      </button>
+      <button class="tablinks" onclick="openQ(event, 'etc')">Others</button>
+    </div>
+
+    <div class="container" id="LT">
+      <p>Level Test</p>
+      <div class="accordion_area" data-group="level-test">
+        <button class="btn btn_toggle">
+          Why are Hanguler Level Tests done by voice call?
+        </button>
+        <div class="content_area">
+          It is important to listen to the speaker’s actual uttering in order to
+          measure one’s accurate language skills.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="level-test">
+        <button class="btn btn_toggle">Is the level test free?</button>
+        <div class="content_area">
+          Yes, all Hanguler level tests are free. However, only once is allowed
+          for each account.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="level-test">
+        <button class="btn btn_toggle">
+          How do I sign up for a level test?
+        </button>
+        <div class="content_area">(레벨테스트 신청하는 방법)</div>
+      </div>
+
+      <div class="accordion_area" data-group="level-test">
+        <button class="btn btn_toggle">
+          Can I sign up for class without doing the level test?
+        </button>
+        <div class="content_area">
+          In order to take Hanguler classes, it is necessary that you take the
+          level test first and find out your Korean speaking level.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="level-test">
+        <button class="btn btn_toggle">
+          I signed up for a level test but I didn’t receive any calls. What
+          should I do?
+        </button>
+        <div class="content_area">
+          If you didn’t receive any calls after signing up for a level test,
+          please check the steps below.<br /><br />
+          1) Check if you wrote down your accurate Skype ID.<br />
+          <p>
+            You can check your Skype ID on Skype app > Skype profile > Skype
+            Name.
+          </p>
+          2) Check if you installed the Skype app.<br />
+          <p>
+            If you wrote down your ID accurately, Hanguler would have called you
+            on Skype. If you don’t have the app installed on our phone or
+            desktop, the call doesn’t start.
+          </p>
+          3) If you already carried out the steps above, please contact us via
+          admin@hangulers.com. We will get back to you as soon as possible.
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="service">
+      <p>Service Use</p>
+      <div class="accordion_area" data-group="Service Use">
+        <button class="btn btn_toggle">
+          I don’t have a Skype account. What should I do?
+        </button>
+        <div class="content_area">
+          You need a Skype account in order to use our service. Please sign up
+          on Skype website.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="Service Use">
+        <button class="btn btn_toggle">
+          I’m not in Korea right now. Can I take classes from abroad?
+        </button>
+        <div class="content_area">
+          Of course! Hanguler provides a global service to our learners. If you
+          have Skype (and Internet), you can use our service from anywhere
+          around the world.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="Service Use">
+        <button class="btn btn_toggle">
+          It’s my first time learning Korean. Can I take classes too?
+        </button>
+        <div class="content_area">
+          Hanguler is open to everyone who wants to learn Korean. Sign up for a
+          level test and let’s see what we can do together.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="Service Use">
+        <button class="btn btn_toggle">What is a package?</button>
+        <div class="content_area">(패키지가 무엇인가)</div>
+      </div>
+
+      <div class="accordion_area" data-group="Service Use">
+        <button class="btn btn_toggle">
+          What is the difference between 10-minute class and 20-minute class?
+        </button>
+        <div class="content_area">(10분/20분 수업 무엇인가)</div>
+      </div>
+    </div>
+
+    <div class="container" id="registration">
+      <p>Booking/Reschedule/Cancel</p>
+      <div class="accordion_area" data-group="booking-etc">
+        <button class="btn btn_toggle">How do I sign up for class?</button>
+        <div class="content_area">(수업 신청하는 방법)</div>
+      </div>
+      <div class="accordion_area" data-group="booking-etc">
+        <button class="btn btn_toggle">
+          I signed up for class, but I want to change the date and time.
+        </button>
+        <div class="content_area">(수업 신청후 시간 변경하는 방법)</div>
+      </div>
+      <div class="accordion_area" data-group="booking-etc">
+        <button class="btn btn_toggle">I want to cancel.</button>
+        <div class="content_area">(수업 취소하는 방법)</div>
+      </div>
+    </div>
+
+    <div class="container" id="payment">
+      <p>Payment/Refund</p>
+      <div class="accordion_area" data-group="payment-etc">
+        <button class="btn btn_toggle">
+          What are my payment method options?
+        </button>
+        <div class="content_area">
+          We support Paypal, visa/credit cards, or bank transfer. Please note
+          that bank transfer is only available between bank accounts based in
+          South Korea.
+        </div>
+      </div>
+      <div class="accordion_area" data-group="payment-etc">
+        <button class="btn btn_toggle">
+          I want to get a refund on my payment.
+        </button>
+        <div class="content_area">
+          (환불 신청하는 방법). Please note that the refund could take up to 3
+          working days. If the refund is made through a payment agency, the
+          refund may be delayed according to the circumstances of the stated
+          agency.
+        </div>
+      </div>
+
+      <div class="accordion_area" data-group="payment-etc">
+        <button class="btn btn_toggle">What is your refund policy?</button>
+        <div class="content_area">
+          You can check out our refund policy here.
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="etc">
+      <p>Others</p>
+      <div class="accordion_area" data-group="others">
+        <button class="btn btn_toggle">Other questions</button>
+        <div class="content_area">bla bla bla</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="faq.js"></script>
+  <script>
+    function openQ(evt, section) {
+      var i, tablinks, container;
+      containers = document.getElementsByClassName("container");
+      for (i = 0; i < containers.length; i++) {
+        containers[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(section).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</html>
