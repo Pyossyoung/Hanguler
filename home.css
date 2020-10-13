@@ -93,7 +93,7 @@
 }
 
 .phone-image img {
-  width: 10%;
+  width: 40px;
 }
 .below-image {
   font-size: 30px;
@@ -151,7 +151,7 @@
   margin: 10px;
 }
 .sns {
-  width: 30px;
+  width: 60px;
   margin-bottom: 10px;
   margin-left: 20px;
 }
