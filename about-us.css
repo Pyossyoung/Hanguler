@@ -205,6 +205,7 @@ hr {
 .stars img {
   width: 15%;
   margin: 5px;
+  align-self: flex-start;
 }
 
 .reviews {
@@ -227,9 +228,13 @@ hr {
 
 .review p {
   flex: 1;
-  border: solid thin gray;
+  border: solid thin #b3b3b3;
   border-radius: 10px;
   padding: 10% 5%;
   margin-left: 0px;
   font-size: 13px;
+}
+
+img {
+  height: auto;
 }

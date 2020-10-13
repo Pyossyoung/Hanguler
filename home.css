@@ -6,13 +6,13 @@
 
 #header {
   margin: 30px 0px;
-  padding: 50px;
+  padding: 5%;
   background-color: #e3f2fd;
 }
 
 #header p {
   color: #153286;
-  margin: 30px;
+  margin: 5%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -24,9 +24,134 @@
 
 #buttons-header .button {
   flex: 1;
-  padding: 30px;
+  padding: 5%;
+}
+
+#what-is-hanguler {
+  width: 90%;
+  margin: auto;
+}
+
+#what-is-different {
+  padding: 5%;
+  background-color: #fbf5e1;
 }
 
 .container {
+  padding: 3%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container img {
+  flex: 1;
+  width: 40%;
+}
+.container .content {
+  flex: 1;
+}
+
+#what-is-different p {
+  color: #153286;
+}
+
+#what-is-different .container {
+  margin: 5%;
+}
+
+#curriculum {
+  padding: 2.5%;
+  background-color: #142c72;
+}
+
+#curriculum .container {
+  margin: 0px;
+}
+
+#curriculum .content {
+  text-align: left;
+  margin-left: 10%;
+}
+
+#curriculum p {
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+#curriculum-img {
+  align-self: flex-end;
+  margin-bottom: -2.5%;
+}
+
+.phone-image {
+  flex: 1;
+  text-align: center;
+}
+
+.phone-image img {
+  width: 10%;
+}
+.below-image {
+  font-size: 30px;
+  color: black;
+}
+.container#grey {
+  background-color: #f6f6f6;
+}
+#courses .content strong {
+  font-size: 20px;
+  color: black;
+}
+#courses .container {
+  margin: 0px;
+}
+#courses .content {
+  margin: 5%;
+}
+
+#about-us {
+  background-color: #142c72;
+  margin: 30px 0px;
   padding: 5%;
+}
+#text-and-sns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+#text-about-us {
+  color: white;
+  flex: 2.2;
+  text-align: right;
+  font-weight: bold;
+  font-size: 60px;
+}
+#img-sns {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#buttons-aboutus {
+  display: flex;
+  padding-bottom: 50px;
+}
+#link-aboutus {
+  flex: 1;
+  text-align: right;
+  margin: 10px;
+}
+#link-facebook {
+  flex: 1;
+  text-align: left;
+  margin: 10px;
+}
+.sns {
+  width: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
