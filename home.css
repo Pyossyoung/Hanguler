@@ -49,9 +49,11 @@
 .container img {
   flex: 1;
   width: 40%;
+  margin: 3px 5px;
 }
 .container .content {
   flex: 1;
+  margin: 3px 5px;
 }
 
 #what-is-different p {
@@ -84,7 +86,7 @@
 
 #curriculum-img {
   align-self: flex-end;
-  margin-bottom: -2.5%;
+  margin-bottom: -2%;
 }
 
 .phone-image {
@@ -154,4 +156,57 @@
   width: 60px;
   margin-bottom: 10px;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 810px) {
+  #header p {
+    font-size: 30px;
+  }
+  .wp-block-button {
+    padding: 3px;
+  }
+  .wp-block-button a {
+    font-size: 15px;
+  }
+  .has-large-font-size {
+    font-size: 25px;
+  }
+  .has-medium-font-size {
+    font-size: 18px;
+  }
+  #what-is-hanguler-text {
+    font-size: 15px;
+  }
+  .container {
+    padding: 10px 0;
+    margin: 5px -5px;
+  }
+  /* #friendly-tutor-img {
+    display: none;
+  } */
+  audio{
+    width:200px;
+  }
+  #curriculum p {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  #courses .below-image {
+    font-size: 25px;
+  }
+  #courses .content strong {
+    font-size: 18px;
+  }
+  #text-about-us {
+    font-size: 30px;
+  }
+  .sns {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width:420px){
+  audio{
+    width:100px;
+  }
 }

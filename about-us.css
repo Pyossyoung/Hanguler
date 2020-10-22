@@ -67,9 +67,11 @@ hr {
   justify-content: center;
   width: 90%;
   margin: 50px auto;
+  /* flex-wrap: wrap; */
 }
 .individual {
-  flex: 1;
+  /* flex: 1; */
+  width: 33%;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -113,8 +115,9 @@ hr {
 }
 
 .card {
+  display: none;
   position: relative;
-  width: 30%;
+  flex: 1;
   height: 500px;
   margin: 10px;
   border: thin solid #b3b3b3;
@@ -122,6 +125,9 @@ hr {
   padding-top: 10px;
   padding-bottom: 10px;
   scrollbar-color: gray white;
+}
+.card.act {
+  display: block;
 }
 .card:before {
   content: "";
@@ -237,4 +243,65 @@ hr {
 
 img {
   height: auto;
+}
+
+@media screen and (max-width: 860px) {
+  .title {
+    font-size: 40px;
+  }
+  .container {
+    margin: 80px 10px;
+  }
+  .description {
+    margin: 10px;
+    font-size: 15px;
+  }
+  #intro .description {
+    margin: 30px;
+  }
+  #box-intro {
+    padding: 10px 30px;
+    width: 90%;
+  }
+  #box-bold {
+    font-size: 25px;
+  }
+  #box-thin {
+    font-size: 15px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .role {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .korean-name {
+    font-size: 20px;
+    font-weight: ExtraBold;
+    margin: 20px;
+  }
+  .english-name {
+    font-size: 15px;
+    margin: 20px;
+  }
+  .tutor-introduce {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .individuals {
+    width: 95%;
+    margin: 25px 5px 40px 5px;
+    flex-wrap: wrap;
+  }
+  .individual {
+    width: 90%;
+  }
+  .individual > img {
+    width: 25%;
+  }
 }
