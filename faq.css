@@ -133,6 +133,11 @@
   font-family:"BarlowB"
 }
 
+a{
+  color:#2773e2;
+  text-decoration:underline;
+}
+
 @media screen and (max-width: 635px) {
   .tab {
     width: 95%;
