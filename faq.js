@@ -36,8 +36,30 @@ function bindingAccordionEvent(wrap) {
   });
 }
 
+function openQ(tab) {
+  var i, tablinks, containers;
+  tablinks = document.querySelectorAll(tab);
+
+  tablinks.forEach((tab, idx) => {
+    console.log(idx);
+    tab.addEventListener("click", () => {
+      containers = document.querySelectorAll(".container");
+      for (i = 0; i < containers.length; i++) {
+        containers[i].style.display = "none";
+      }
+
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      containers[idx].style.display = "block";
+      tab.classList.add("active");
+    })
+  })
+}
+
 document.querySelectorAll(".btn_toggle").forEach((btn) => {
   btn.setAttribute("data-after", "+");
 });
 
 bindingAccordionEvent(".accordion_area");
+openQ(".tablinks");

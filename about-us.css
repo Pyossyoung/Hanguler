@@ -113,6 +113,10 @@ hr {
   height: 5%;
   cursor: pointer;
 }
+.arrow.deact{
+  filter:opacity(15%);
+  cursor:default;
+}
 
 .card {
   display: none;
@@ -173,10 +177,12 @@ hr {
   font-size: 25px;
   font-weight: ExtraBold;
   margin: 20px;
+  font-family:"NanumSquareEB"
 }
 .english-name {
   font-size: 15px;
   margin: 20px;
+  font-family:"BarlowR"
 }
 
 .voices {
@@ -187,11 +193,13 @@ hr {
 .voice {
   display: flex;
   align-items: center;
+  margin-top:15px;
 }
 
 .tutor-introduce {
   margin: 5%;
   font-size: 15px;
+  font-family:"BarlowR";
 }
 
 .voice img {
@@ -239,10 +247,17 @@ hr {
   padding: 10% 5%;
   margin-left: 0px;
   font-size: 13px;
+  font-family:"BarlowR"
 }
 
 img {
   height: auto;
+}
+
+audio{
+  width:90%;
+  margin:auto;
+  height:50px;
 }
 
 @media screen and (max-width: 860px) {
@@ -250,7 +265,7 @@ img {
     font-size: 40px;
   }
   .container {
-    margin: 80px 10px;
+    margin: 110px 10px;
   }
   .description {
     margin: 10px;
@@ -264,10 +279,10 @@ img {
     width: 90%;
   }
   #box-bold {
-    font-size: 25px;
+    font-size: 20px;
   }
   #box-thin {
-    font-size: 15px;
+    font-size: 10px;
   }
   .name {
     font-size: 18px;

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   background-color: #e6f2fc;
-  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.1);
 }
 .tab button {
   flex: 1;
@@ -16,6 +16,7 @@
   color: #2773e2;
   font-weight: bold;
   position: relative;
+  font-family:"BarlowR"
 }
 .wborder::after {
   position: absolute;
@@ -53,10 +54,9 @@
 
 .accordion_area {
   margin: 20px auto;
-
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.1);
 }
 .accordion_area .btn_toggle {
   flex: 1;
@@ -65,11 +65,12 @@
   height: 30px;
   padding: 0 10px;
   background: #d7e4f9;
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   line-height: 30px;
   box-sizing: border-box;
   color: #4d4d4d;
+  font-family:"BarlowR";
 }
 .accordion_area .btn_toggle::before {
   display: inline;
@@ -88,6 +89,8 @@
   padding: 10px;
   background: #f7f7f7;
   color: #4d4d4d;
+  font-family:"BarlowR";
+  font-size:18px;
 }
 .accordion_area .content_area::before {
   display: inlnie;
@@ -109,6 +112,7 @@
   text-align: center;
   font-size: 40px;
   font-weight: bold;
+  font-family:"BarlowEB"
 }
 
 #description {
@@ -118,11 +122,15 @@
 #description p {
   text-align: center;
 }
+#instruction{
+  font-size: 18px;
+}
 
 #catch {
   color: #2773e2;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
+  font-family:"BarlowB"
 }
 
 @media screen and (max-width: 635px) {
