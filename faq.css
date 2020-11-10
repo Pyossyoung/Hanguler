@@ -133,7 +133,7 @@
   font-family:"BarlowB"
 }
 
-a{
+.entry-content a{
   color:#2773e2;
   text-decoration:underline;
 }
