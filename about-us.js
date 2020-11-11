@@ -3,6 +3,10 @@ class Tutorcards {
     this.cards = cards;
     this.startidx = startidx;
     this.audios = document.querySelectorAll("audio");
+    this.audios.forEach((a) => {
+      a.setAttribute("controlsList", "nodownload");
+      a.addEventListener("play", () => tutor_cards.ctrlAudio(a));
+    });
   }
 
   shiftRight() {
@@ -77,6 +81,6 @@ next.onclick = () => tutor_cards.shiftRight();
 
 window.addEventListener("resize", () => tutor_cards.displayCards());
 
-document.querySelectorAll("audio").forEach((a) => {
-  a.addEventListener("play", () => tutor_cards.ctrlAudio(a));
-});
+// document.querySelectorAll("audio").forEach((a) => {
+//   a.addEventListener("play", () => tutor_cards.ctrlAudio(a));
+// });
