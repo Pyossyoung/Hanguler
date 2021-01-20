@@ -2,9 +2,6 @@
   background-color: #ffdb24;
   color: #17408d;
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
-}
-
-.wp-block-button a{
   font-family:"BarlowR";
 }
 
@@ -33,7 +30,7 @@
 
 #what-is-hanguler {
   width: 90%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 #what-is-different {
@@ -56,7 +53,7 @@
   margin: 3px 5px;
 }
 .container .content {
-  flex: 1;
+  flex: 1.5;
   margin: 3px 5px;
 }
 
@@ -138,7 +135,14 @@
   margin-left: 20px;
 }
 
+br.adjusting-br{
+  display:none;
+}
+
 @media screen and (max-width: 810px) {
+  .wp-block-button__link{
+    padding:12px 15px;
+  }
   #header p {
     font-size: 30px;
   }
@@ -146,13 +150,13 @@
     padding: 3px;
   }
   .wp-block-button a {
-    font-size: 15px;
+    font-size: 14px;
   }
   .has-large-font-size {
     font-size: 25px;
   }
   .has-medium-font-size {
-    font-size: 18px;
+    font-size: 15px;
   }
   #what-is-hanguler-text {
     font-size: 15px;
@@ -161,32 +165,49 @@
     padding: 10px 0;
     margin: 5px -5px;
   }
-  /* #friendly-tutor-img {
-    display: none;
-  } */
-  audio{
-    width:200px;
+  figure{
+    display:none;
   }
   #curriculum p {
     font-size: 25px;
     margin-bottom: 5px;
   }
   #courses .below-image {
-    font-size: 25px;
+    font-size: 23px;
   }
   #courses .content strong {
-    font-size: 18px;
+    font-size: 15px;
   }
+  #courses .content .wp-block-button strong{
+    font-size: 14px;
+  } 
   #text-aboutus {
     font-size: 30px;
   }
   .sns {
     width: 50px;
   }
+  #what-is-different .container{
+    flex-direction:column;
+  }
+  #what-is-different .container:nth-child(2) p{
+    margin-bottom:10px;
+  }
+  #what-is-different .container:nth-child(2){
+    margin-bottom:50px;
+  }
+  #what-is-different .container:nth-child(3){
+    flex-direction:column-reverse;
+  }
 }
-
-@media screen and (max-width:420px){
-  audio{
-    width:100px;
+@media screen and (max-width: 500px){
+  br.adjusting-br{
+    display:block;
+  }
+  .container .content{
+    flex:1;
+  }
+  br.adjusting-br-1{
+    display:none;
   }
 }

@@ -25,7 +25,7 @@ class Tutorcards {
 
   displayCards() {
     if (
-      matchMedia("screen and (min-width:580px) and (max-width:784px)").matches
+      matchMedia("screen and (min-width:580px) and (max-width:980px)").matches
     ) {
       this.toShow = 2;
     } else if (matchMedia("screen and (max-width:580px)").matches) {
@@ -80,7 +80,3 @@ prev.onclick = () => tutor_cards.shiftLeft();
 next.onclick = () => tutor_cards.shiftRight();
 
 window.addEventListener("resize", () => tutor_cards.displayCards());
-
-// document.querySelectorAll("audio").forEach((a) => {
-//   a.addEventListener("play", () => tutor_cards.ctrlAudio(a));
-// });

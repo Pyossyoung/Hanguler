@@ -1,0 +1,192 @@
+.wp-block-button .wp-block-button__link {
+  background-color: #ffdb24;
+  color: #17408d;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+  font-family:"BarlowR";
+}
+
+#header {
+  padding: 5%;
+  background-color: #e3f2fd;
+}
+
+#header p {
+  color: #153286;
+  margin: 5%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family:"BarlowEB";
+}
+
+#buttons-header {
+  display: flex;
+}
+
+#buttons-header .button {
+  flex: 1;
+  padding: 5%;
+}
+
+#what-is-hanguler {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#what-is-different {
+  padding: 5%;
+  background-color: #fbf5e1;
+}
+
+.container {
+  padding: 3%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container img {
+  flex: 1;
+  width: 40%;
+  margin: 3px 5px;
+}
+.container .content {
+  flex: 1;
+  margin: 3px 5px;
+}
+
+#what-is-different p {
+  color: #153286;
+}
+
+#what-is-different .container {
+  margin: 5%;
+}
+
+#curriculum {
+  text-align:center;
+  background-color: #E3F2FD;
+  padding:5%;
+}
+
+#curriculum p {
+  font-weight: bold;
+  font-size: 50px;
+  color: #153286;
+}
+
+.phone-image {
+  flex: 1;
+  text-align: center;
+}
+
+.phone-image img {
+  width: 40px;
+}
+.below-image {
+  font-size: 30px;
+  color: black;
+  font-family:"BarlowEB"
+}
+.container.grey {
+  background-color: #f6f6f6;
+}
+#courses .content strong {
+  font-size: 20px;
+  color: black;
+  font-family:"BarlowR";
+}
+#courses .container {
+  margin: 0px;
+}
+#courses .content {
+  margin: 5%;
+}
+#about-us {
+  background-color: #142c72;
+  padding: 5%;
+}
+#text-aboutus {
+  margin-bottom:3%;
+  text-align:center;
+  color: white;
+  font-weight: bold;
+  font-size:60px;
+  font-family:"BarlowEB"
+}
+#buttons-aboutus {
+  display: flex;
+}
+#link-aboutus {
+  flex: 1;
+  text-align: right;
+  margin: 10px;
+}
+#link-facebook {
+  flex: 1;
+  text-align: left;
+  margin: 10px;
+}
+.sns {
+  width: 60px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 810px) {
+  #header p {
+    font-size: 30px;
+  }
+  .wp-block-button {
+    padding: 3px;
+  }
+  .wp-block-button a {
+    font-size: 15px;
+  }
+  .has-large-font-size {
+    font-size: 25px;
+  }
+  .has-medium-font-size {
+    font-size: 18px;
+  }
+  #what-is-hanguler-text {
+    font-size: 15px;
+  }
+  .container {
+    padding: 10px 0;
+    margin: 5px -5px;
+  }
+  figure{
+    display:none;
+  }
+  #curriculum p {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  #courses .below-image {
+    font-size: 20px;
+  }
+  #courses .content strong {
+    font-size: 18px;
+  }
+  #text-aboutus {
+    font-size: 30px;
+  }
+  .sns {
+    width: 50px;
+  }
+  #what-is-different .container{
+    flex-direction:column;
+  }
+  #what-is-different .container:nth-child(2) p{
+    margin-bottom:10px;
+  }
+  #what-is-different .container:nth-child(2){
+    margin-bottom:50px;
+  }
+  #what-is-different .container:nth-child(3){
+    flex-direction:column-reverse;
+  }
+}
